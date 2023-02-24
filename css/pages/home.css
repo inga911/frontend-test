@@ -1,0 +1,104 @@
+@import '../base/base.css';
+@import '../base/layout.css';
+
+@import '../3rd-party/font-awesome.min.css';
+@import '../components/button.css';
+
+/* HEADER START */
+header {
+    padding: 0 !important;
+}
+
+.logo-img {
+    float: left;
+}
+.logo {
+    width: 70px;
+    height: 48.31px;
+}
+.logo-start {
+    margin: 0;
+    object-fit: contain;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 40px;
+    line-height:1.25em;
+    color: #FFFFFF;
+    float: right;
+}
+.nav {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 1.25em;
+    text-align: right;
+}
+.nav > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 1.5em;
+}
+.nav > a:last-child {
+    margin-right: 0;
+}
+.nav > a:hover {
+    color: black;
+    text-decoration: underline ;
+}
+/* HEADER END */
+
+
+/* HERO START */
+.main-title {
+    font-size:40px;
+    line-height: 1.25em;
+}
+.main-para {
+    line-height: 1.25em;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.white-txt {
+    color: #FFFFFF;
+}
+.hero-left {
+    float: left;
+    width: 40%;
+}
+.hero-img {
+    float: right;
+    width:55%;
+}
+/* HERO END */
+
+/* PERTNERS SECTION START */
+.partners-section{
+    text-align: center;
+}
+.partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    margin-bottom: 55px;
+}
+.partners > img {
+    width: 180px;
+}
+/* PERTNERS SECTION END */
+
+
+/* FOOTER START */
+footer {
+    padding: 0 !important;
+}
+.socials > a {
+    float: left;
+    margin-top: 15px;
+    margin-right: 1.5em;
+}
+
+.footer-para {
+    float: right;
+}
+
+/* FOOTER END */

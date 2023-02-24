@@ -1,0 +1,14 @@
+.button {
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.button-black {
+    background-color: #000;
+    color: #FFFFFF;
+}
