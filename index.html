@@ -7,64 +7,66 @@
     <title>FrontEnd test</title>
     <link rel="stylesheet" href="./css/pages/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container bg-green">
         <div class="row">
             <div class="col-12 header-col">
-                <div class="col-12">
                     <div class="logo-img">
                         <img class="logo" src="./img/logo/Group 1.png" alt="logo">
                         <h3 class="logo-start">Start</h3>
                     </div>
-                    <nav class="nav">
+                    <nav class="nav hidden visible-md">
                         <a href="#">Home</a>
                         <a href="#">Portfolio</a>
                         <a href="#">Services</a>
                         <a href="#">Contact</a>
                     </nav>
-                </div>
+                    <a class="menu-bars fa fa-bars visible hidden-md"></a>
             </div>
         </div>
     </header>
 
     <section class="container hero bg-green">
         <div class="row">
-            <div class="hero-left">
+            <img  class="hero-img-over visible hidden-md" src="./img/hero/Group.png" alt="Group">
+            <div class="hero-left col-12 col-md-5">
                 <h5 class="white-txt">Welcome</h5>
                 <h1 class="main-title white-txt">Lorem ipsum dolor sit amet consectetur </h1>
                 <p class="main-para white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
                 <a class="button hero-btn" href="#">Explore</a>
             </div>
-            <img  class="hero-img" src="./img/hero/Group.png" alt="Group">
+            <img  class="hero-img hidden visible-md" src="./img/hero/Group.png" alt="Group">
         </div>
     </section>
 
     <section class="conatiner bg-white partners-section container-fluid">
             <div class="row">
-                <div class="section-title">
-                    <h5 class="little-title">Partners</h5>
-                    <h2 class="main-title">Lorem Ipsum Dolor</h2>
-                    <p class="main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <div class="section-title">
+                        <h5 class="little-title">Partners</h5>
+                        <h2 class="main-title">Lorem Ipsum Dolor</h2>
+                        <p class="main-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="partners col-12 ">
+                        <a href="#"><img src="./img/partners/google.svg" alt="Google"></a>
+                        <a href="#"><img src="./img/partners/microsoft.svg" alt="Microsoft"></a>
+                        <a href="#"><img src="./img/partners/airbnb.svg" alt="Airbnb"></a>
+                        <a href="#"><img src="./img/partners/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="./img/partners/spotify.svg" alt="Spotify"></a>
+                    </div>
+                    <a href="#" class="button button-black">Learn more</a>
                 </div>
-                <div class="partners">
-                    <a href="#"><img src="./img/partners/google.svg" alt="Google"></a>
-                    <a href="#"><img src="./img/partners/microsoft.svg" alt="Microsoft"></a>
-                    <a href="#"><img src="./img/partners/airbnb.svg" alt="Airbnb"></a>
-                    <a href="#"><img src="./img/partners/facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="./img/partners/spotify.svg" alt="Spotify"></a>
-                </div>
-                <a href="#" class="button button-black">Learn more</a>
             </div>
     </section>
 
-    <footer class="container bg-green">
-        <div class="row">
+    <footer class="container footer-section bg-green">
+        <div class="row col-12 ">
             <div class="socials">
                 <a href="#"><img src="./img/socials/fb.svg" alt="Facebook"></a>
                 <a href="#"><img src="./img/socials/ig.svg" alt="Instagram"></a>

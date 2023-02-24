@@ -60,7 +60,7 @@
     width: var(--width);
     margin: 0 calc((100% - var(--width)) / 2);
     padding: 15px 0;
-    float: left;
+    /* float: left; */
 }
 
 .container-fluid > .row {
@@ -147,6 +147,102 @@
 }
 .row > .ml-11 {
     margin-left: var(--ml11);
+}
+
+@media (min-width: 375px) {
+    :root {
+        --width: 340px;
+    }
+
+    .hidden-sx {
+        display: none !important;
+    }
+    .visible-sx {
+        display: inline-block !important;
+    }
+    .visible-flex-sx {
+        display: flex !important;
+    }
+    .visible-grid-sx {
+        display: grid !important;
+    }
+    .float-right-sx {
+        float: right !important;
+    }
+
+    .row > .col-sx-1 {
+        width: var(--c1);
+    }
+    .row > .col-sx-2 {
+        width: var(--c2);
+    }
+    .row > .col-sx-3 {
+        width: var(--c3);
+    }
+    .row > .col-sx-4 {
+        width: var(--c4);
+    }
+    .row > .col-sx-5 {
+        width: var(--c5);
+    }
+    .row > .col-sx-6 {
+        width: var(--c6);
+    }
+    .row > .col-sx-7 {
+        width: var(--c7);
+    }
+    .row > .col-sx-8 {
+        width: var(--c8);
+    }
+    .row > .col-sx-9 {
+        width: var(--c9);
+    }
+    .row > .col-sx-10 {
+        width: var(--c10);
+    }
+    .row > .col-sx-11 {
+        width: var(--c11);
+    }
+    .row > .col-sx-12 {
+        width: var(--c12);
+    }
+
+    .row > .ml-sx-0 {
+        margin-left: var(--ml0);
+    }
+    .row > .ml-sx-1 {
+        margin-left: var(--ml1);
+    }
+    .row > .ml-sx-2 {
+        margin-left: var(--ml2);
+    }
+    .row > .ml-sx-3 {
+        margin-left: var(--ml3);
+    }
+    .row > .ml-sx-4 {
+        margin-left: var(--ml4);
+    }
+    .row > .ml-sx-5 {
+        margin-left: var(--ml5);
+    }
+    .row > .ml-sx-6 {
+        margin-left: var(--ml6);
+    }
+    .row > .ml-sx-7 {
+        margin-left: var(--ml7);
+    }
+    .row > .ml-sx-8 {
+        margin-left: var(--ml8);
+    }
+    .row > .ml-sx-9 {
+        margin-left: var(--ml9);
+    }
+    .row > .ml-sx-10 {
+        margin-left: var(--ml10);
+    }
+    .row > .ml-sx-11 {
+        margin-left: var(--ml11);
+    }
 }
 
 @media (min-width: 576px) {

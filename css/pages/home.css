@@ -8,13 +8,11 @@
 header {
     padding: 0 !important;
 }
-
 .logo-img {
     float: left;
 }
 .logo {
-    width: 70px;
-    height: 48.31px;
+    object-fit: contain;
 }
 .logo-start {
     margin: 0;
@@ -27,9 +25,8 @@ header {
     float: right;
 }
 .nav {
-    margin-left: auto;
     font-size: 20px;
-    line-height: 1.25em;
+    line-height: 1em;
     text-align: right;
 }
 .nav > a {
@@ -42,7 +39,47 @@ header {
 }
 .nav > a:hover {
     color: black;
-    text-decoration: underline ;
+    text-decoration: underline;
+}
+.menu-bars:hover {
+color: rgb(18, 111, 18);
+}
+
+@media (min-width: 150px) {
+    .logo {
+        width: 45px;
+    }
+    .logo-start {
+        margin-top: 2%;
+        font-size: 35px;
+        width: 30px;
+        margin-left: 5px;
+    }
+    .menu-bars {
+    font-size: 22px;
+    margin-top: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .logo {
+        width: 60px;
+    }
+    .logo-start {
+        width: 50px;
+        margin-left: 5px;
+    }
+    .nav {
+        margin-right: 0;
+        font-size: 15px;
+        line-height: 1.25em;
+        text-align: right;
+        float: right;
+        padding: 15px;
+    }
+    .nav > a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 }
 /* HEADER END */
 
@@ -68,6 +105,24 @@ header {
     float: right;
     width:55%;
 }
+@media (min-width: 150px) {
+   .hero-img-over {
+    width: 100%;
+   }
+   .main-title {
+    font-size: 28px;
+   }
+}
+@media (min-width: 576px) {
+    .hero-left {
+     text-align: center;
+    }
+ }
+ @media (min-width: 768px) {
+    .hero-left {
+     text-align: left;
+    }
+ }
 /* HERO END */
 
 /* PERTNERS SECTION START */
@@ -77,12 +132,29 @@ header {
 .partners {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3em;
+    gap: 1.5em;
     margin-bottom: 55px;
+    text-align: center;
 }
-.partners > img {
-    width: 180px;
+
+@media (min-width: 150px) {
+    .partners{
+        flex-direction: column;
+        gap: 2.8em;
+    }
+    .partners > a > img {
+        width: 30%;
+    }
+}
+ @media (min-width: 576px) {
+    .partners{
+        flex-direction: row;
+    }
+    .partners > a > img {
+        width: 80%;
+    }
 }
 /* PERTNERS SECTION END */
 
@@ -99,6 +171,22 @@ footer {
 
 .footer-para {
     float: right;
+}
+@media (min-width: 150px) {
+    .socials {
+        margin-left: calc(50% - 150px);
+    }
+    .footer-para {
+        margin-right: calc(50% - 120px);
+    }
+}
+@media (min-width: 768px) {
+    .socials{
+       margin-left: 0;
+    }
+    .footer-para {
+        margin-right: 0;
+    }
 }
 
 /* FOOTER END */
